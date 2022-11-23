@@ -1,0 +1,67 @@
+header {
+  position: relative;
+  background: whitesmoke;
+  padding: 0;
+  border-bottom: 1px solid #f7ab0a;
+
+  .container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    nav {
+      ul {
+        display: flex;
+        list-style-type: none;
+        margin: 0;
+
+        .menu-container {
+          position: relative;
+
+          .menu {
+            position: absolute;
+            z-index: 1;
+            background: whitesmoke;
+            display: none;
+
+            a {
+              width: 100%;
+              min-width: 8rem;
+            }
+          }
+        }
+
+        .menu-container:hover .menu {
+          display: block;
+        }
+
+        li {
+          a {
+            padding: 1rem;
+            display: inline-block;
+            color: #f7ab0a;
+
+            span {
+              background: #f0b73a;
+              padding: 0.1rem 0.45rem;
+              border-radius: 100rem;
+              font-size: 0.9rem;
+              color: white;
+            }
+          }
+
+          a:hover {
+            background: #f7ab0a;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  a.logo {
+    font-weight: bold;
+    padding: 1rem;
+  }
+}
