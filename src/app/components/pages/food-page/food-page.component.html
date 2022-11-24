@@ -30,6 +30,6 @@
     <div class="price">
       {{ food.price | currency: "€" }}
     </div>
-    <button>Add to Cart</button>
+    <button (click)="onAddToCart()">Add to Cart</button>
   </div>
 </div>
