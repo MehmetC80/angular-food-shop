@@ -16,6 +16,7 @@ li {
     flex-direction: column;
     overflow: hidden;
     color: #f7ab0a;
+    text-decoration: none;
 
     img {
       object-fit: cover;
@@ -65,6 +66,9 @@ li {
         flex: 3;
         text-align: right;
         text-decoration: none;
+        span {
+          text-decoration: none;
+        }
       }
       .price {
         position: absolute;
